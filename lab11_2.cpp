@@ -3,6 +3,7 @@
 using namespace std;
 
 //Write function prototype here
+unsigned long long int gcd(int, int);
 
 int main(){
 	cout << gcd(25,15) << "\n";
@@ -14,10 +15,11 @@ int main(){
 	
 	return 0;
 }
-
-//Write function definition here
-/*
-??? gcd(???){
-
+unsigned long long int gcd(int x, int y){
+	if (x%y == 0){
+		return y;
+	}else
+	{
+		return gcd(y,x%y);
+	}
 }
-*/

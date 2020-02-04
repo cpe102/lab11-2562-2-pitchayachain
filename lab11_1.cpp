@@ -1,7 +1,9 @@
 #include<iostream>
-
 using namespace std;
 
+
+unsigned long long int fibonacci(int);
+	                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
 //Write prototype of function fibonacci() here
 
 int main(){
@@ -16,9 +18,14 @@ int main(){
 }
 
 
-//Write definition of function fibonacci() here
-/*
-??? fibonacci(???){
-  
+unsigned long long int fibonacci(int x){
+if (x==0){
+	return 0;
 }
-*/
+else if(x==1){
+	return 1;
+}else{
+	
+return fibonacci(x-1) + fibonacci(x-2);
+}
+}
